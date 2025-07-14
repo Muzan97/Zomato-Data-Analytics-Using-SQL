@@ -52,15 +52,20 @@ Foreign keys and constraints were enforced to ensure data integrity.
 
 ## 🧪 Exploratory Data Analysis (Python)
 
-Before building queries, I performed a detailed EDA in Python (Jupyter Notebook) using the `orders copy.csv` file:
+Before loading data into SQL, a focused EDA was performed using **Python and Pandas** on the `orders.csv` file to verify its structure and quality. The analysis included:
 
-- Checked for **nulls, duplicates, and unique values**
-- Verified **data types** and logical timestamp sequences
-- Counted top **ordered dishes and high-value customers**
-- Explored **temporal trends** (peak order hours, popular dates)
-- Ensured quality before database import
+- ✅ **Previewed the dataset** using `head()` to understand the columns
+- 🔍 **Checked for data types & column info** with `.info()`
+- 🔁 **Counted unique values** in each column to detect cardinality
+- ❌ **Checked for duplicated rows** and confirmed data uniqueness
+- ⚠️ **Detected missing values** using `.isnull().sum()`
+- 📊 **Analyzed categorical columns**, especially `order_status` and `order_item` distributions
+- 💵 **Ran descriptive stats** on `total_amount` to study price behavior, detecting outliers and range (most users spent ₹250–₹340)
+
+This validation ensured the dataset was clean, well-formed, and ready for SQL-based analysis and transformation.
 
 ✅ Notebook: `EDA_on_orders.ipynb` in the `python_eda/` folder.
+
 
 ---
 
