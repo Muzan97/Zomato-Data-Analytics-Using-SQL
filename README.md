@@ -32,6 +32,8 @@ The database follows a **snowflake schema** for efficient normalization, designe
 - **deliveries**: delivery details and status
 - **riders**: rider information and sign-up time
 
+![ERD](https://github.com/Muzan97/Zomato-Data-Analytics-Using-SQL/blob/main/Schema/ERD%20copy.jpg)
+
 ### 🧩 Relationships
 ```
 orders (FACT)  
