@@ -38,10 +38,10 @@ The database follows a **snowflake schema** for efficient normalization, designe
 ```
 orders (FACT)  
 │  
-├── customers (1:N)  
-├── restaurants (1:N)  
-├── deliveries (1:1)  
-└── riders (1:N via deliveries)
+├── customers   
+├── restaurants   
+├── deliveries 
+└── riders 
 ```
 
 Foreign keys and constraints were enforced to ensure data integrity.
@@ -52,9 +52,9 @@ Foreign keys and constraints were enforced to ensure data integrity.
 
 ## 🧪 Exploratory Data Analysis (Python)
 
-Before building queries, I performed a detailed EDA in Python (Jupyter Notebook) using the `orders.csv` file:
+Before building queries, I performed a detailed EDA in Python (Jupyter Notebook) using the `orders copy.csv` file:
 
-- Checked for **nulls, duplicates, and inconsistencies**
+- Checked for **nulls, duplicates, and unique values**
 - Verified **data types** and logical timestamp sequences
 - Counted top **ordered dishes and high-value customers**
 - Explored **temporal trends** (peak order hours, popular dates)
@@ -130,24 +130,15 @@ Zomato-Data-Analytics-Project/
 
 ---
 
-## 🔮 Future Enhancements
-
-- 📊 Build interactive **Tableau/Power BI dashboards**
-- 📅 Add **monthly cohort analysis** for retention trends
-- 💬 Create a **recommendation engine** using item-pair logic
-- 🌐 Host dashboard via Streamlit/PostgreSQL for live insights
-
----
-
 ## 🔗 Tools Used
 
 - **SQL (PostgreSQL)** – for insights and data transformation  
-- **Python (Pandas, NumPy)** – for initial EDA and preprocessing  
+- **Python (Pandas, NumPy, Matplotlib, Seaborn)** – for initial EDA and preprocessing  
 - **DB Schema Design** – Snowflake model  
 - **ER Modeling** – Conceptualized via ERD  
 - **Jupyter Notebook** – for EDA execution  
 
 ---
 
-> 👨‍💻 Created with ❤️ by [Your Name] — Feel free to fork, use, or build on top of this.
+> 👨‍💻 Created by Arjun Karalkar
 
