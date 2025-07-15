@@ -46,7 +46,7 @@ orders (FACT)
 
 Foreign keys and constraints were enforced to ensure data integrity.
 
-✅ Files: `Snowflake_Schema.sql` and `ERD.jpg` inside the `schema/` folder.
+✅ Files: `Snowflake_Schema.sql` and `ERD.jpg` inside the `Schema` folder.
 
 ---
 
@@ -64,8 +64,7 @@ Before loading data into SQL, a focused EDA was performed using **Python and Pan
 
 This validation ensured the dataset was clean, well-formed, and ready for SQL-based analysis and transformation.
 
-✅ Notebook: `EDA_on_orders.ipynb` in the `python_eda/` folder.
-
+✅ Notebook: `Exploratory Data Analysis of order copy.csv file in Python.ipynb` file. 
 
 ---
 
@@ -118,19 +117,18 @@ After schema setup and import, all in-depth business insights were derived using
 ```
 Zomato-Data-Analytics-Project/
 ├── README.md
-├── schema/
+├── Schema
 │   ├── Snowflake_Schema.sql
 │   └── ERD.jpg
-├── python_eda/
-│   └── EDA_on_orders.ipynb
-├── sql_analysis/
-│   └── All_SQL_Queries_&_Insights.sql
-├── data/ (optional)
+├── Exploratory Data Analysis of order copy.csv file in Python.ipynb
+├── All_SQL_Queries_&_Insights.sql
+├── CSV Files
 │   ├── orders.csv
 │   ├── customers.csv
 │   ├── restaurants.csv
 │   ├── riders.csv
 │   └── deliveries.csv
+
 ```
 
 ---
